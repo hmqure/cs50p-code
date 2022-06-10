@@ -17,8 +17,9 @@ for i in range(len(lower)):
         double.append(lower[i+1::])
         front.append(lower[0:i])
 
-
-if double[-1] in images:
+if "." not in str:
+    print("application/octet-stream")
+elif double[-1] in images:
     print("image/"+double[-1])
 elif double[-1] in images2:
     print("image/jpeg")
