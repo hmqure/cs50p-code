@@ -2,7 +2,8 @@ str = input("File name: ")
 
 extensions = []
 
-images = ['jpg', 'jpeg', 'png', 'gif']
+images = ['jpeg', 'png', 'gif']
+images2 = ['jpg']
 apps = ['pdf', 'txt', 'zip']
 lower = str.lower()
 lower = lower.replace(" ", "")
@@ -15,6 +16,8 @@ for i in range(len(lower)):
 
 if double[-1] in images:
     print("image/"+double[-1])
+elif double[-1] in images2:
+    print("image/jpeg")
 elif double[-1] in apps:
     print("application/"+double[-1])
 else:
