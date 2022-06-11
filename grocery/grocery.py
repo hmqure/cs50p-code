@@ -21,5 +21,3 @@ while True:
         for i in ff:
             print(i)
 
-        for i in ff:
-            print(i)
