@@ -7,5 +7,5 @@ while True:
         items.append(lower)
 
     except EOFError:
-        pass
-        print(items)
+        for i in items:
+            print(i.count())
