@@ -16,3 +16,5 @@ def is_valid(s):
                         zero.append(s[i])
                         if zero[0] != '0' and s[-1].isnumeric() is True:
                             return True
+
+main()
