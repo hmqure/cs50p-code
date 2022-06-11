@@ -5,7 +5,7 @@ ff = []
 while True:
     try:
 
-        item = input("Enter item:")
+        item = input()
         upper = item.upper()
         items.append(upper)
 
