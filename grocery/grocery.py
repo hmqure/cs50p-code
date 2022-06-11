@@ -18,7 +18,7 @@ while True:
             if i not in ff:
                 ff.append(i)
 
-        for i in ff:
+        for i in sorted(ff):
             print(i)
 
         break
