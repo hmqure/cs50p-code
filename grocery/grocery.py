@@ -23,5 +23,3 @@ while True:
 
         for i in ff:
             print(i)
-
-        break
