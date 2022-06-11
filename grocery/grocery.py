@@ -11,14 +11,14 @@ while True:
 
     except EOFError:
 
-        for i in items:
+        for i in sorted(items):
             finals.append(f'{items.count(i)} {i}')
 
         for i in finals:
             if i not in ff:
                 ff.append(i)
 
-        for i in sorted(ff):
+        for i in ff:
             print(i)
 
         break
