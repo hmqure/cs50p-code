@@ -26,7 +26,7 @@ while counter == 0:
         if split[1].isdigit() is True and split[2].isdigit() is True:
             if 1 <= int(split[1]) <= 31:
 
-                if split[0].isdigit() is False:
+                if split[0].isdigit() is False and "," in item:
                     for i in range(len(months)):
                         if months[i] == split[0]:
                             print((f"{int(split[2]):04}")+"-"+(f"{i+1:02d}")+"-"+(f"{int(split[1]):02d}"))
@@ -41,6 +41,9 @@ while counter == 0:
                     else:
                         pass
 
+                else:
+                    pass
+
             else:
                 pass
 
@@ -49,3 +52,4 @@ while counter == 0:
 
     except EOFError as e:
         pass
+
