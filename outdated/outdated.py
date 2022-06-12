@@ -44,8 +44,10 @@ while True:
                 pass
 
         else:
-            break
+            pass
 
     except EOFError as e:
         pass
+
+
 
