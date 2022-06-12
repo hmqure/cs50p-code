@@ -12,7 +12,7 @@ months = [
     "November",
     "December"]
 
-while True:
+while broken == False:
     try:
         broken = False
         item = input("Date:")
