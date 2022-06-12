@@ -17,8 +17,15 @@ while True:
     case = item.title()
 
     try:
-        counter = counter + dict[case]
-        print(f"${counter:.2f}")
+
+        if case in dict:
+            counter = counter + dict[case]
+            print(f"${counter:.2f}")
+
+        elif case not in dict:
+            pass
 
     except EOFError:
         print(f"${counter:.2f}")
+
+
