@@ -5,15 +5,15 @@ while True:
         split = frac.split("/")
         n = n + (round(((int(split[0]))/(int(split[1])))*100))
 
-        if 0 < n < 100:
+        if 1 < n < 99:
             print(str(n)+"%")
             break
 
-        elif n == 0:
+        elif n == 0 or n == 1:
             print("E")
             break
 
-        elif n == 100:
+        elif n == 99 or n == 100:
             print("F")
             break
 
@@ -25,3 +25,5 @@ while True:
 
     except ValueError as e:
         pass
+
+    
