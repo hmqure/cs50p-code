@@ -13,10 +13,9 @@ dict = {
 counter = 0
 
 while True:
-    item = input("Item: ")
-    case = item.title()
-
     try:
+        item = input("Item: ")
+        case = item.title()
 
         if case in dict:
             counter = counter + dict[case]
