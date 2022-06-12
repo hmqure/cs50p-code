@@ -12,9 +12,10 @@ months = [
     "November",
     "December"]
 
-while broken == False:
+counter = 0
+
+while counter == 0:
     try:
-        broken = False
         item = input("Date:")
         rep = item.replace("/","_").replace(" ","_").replace(",","_")
         split = rep.split("_")
@@ -29,13 +30,13 @@ while broken == False:
                     for i in range(len(months)):
                         if months[i] == split[0]:
                             print((f"{int(split[2]):04}")+"-"+(f"{i+1:02d}")+"-"+(f"{int(split[1]):02d}"))
-                            broken = True
+                            counter = counter + 1
                             break
 
                 elif split[0].isdigit() is True:
                     if 1 <= int(split[0]) <= 12:
                         print((f"{int(split[2]):04}")+"-"+(f"{int(split[0]):02d}")+"-"+(f"{int(split[1]):02d}"))
-                        broken = True
+                        counter = counter + 1
                         break
                     else:
                         pass
@@ -48,6 +49,3 @@ while broken == False:
 
     except EOFError as e:
         pass
-
-
-
