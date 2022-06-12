@@ -26,6 +26,7 @@ while True:
             pass
 
     except EOFError:
-        print(f"${counter:.2f}")
 
+        print(f"${counter:.2f}")
+        break
 
