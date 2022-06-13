@@ -2,4 +2,10 @@ from pyfiglet import Figlet
 
 s = "String"
 
-figlet = figlet.getFonts(s)
+figlet = Figlet()
+
+figlet.getFonts()
+
+figlet.setFont(font=f)
+
+
