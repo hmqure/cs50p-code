@@ -5,7 +5,11 @@ sys = sys.argv
 
 if len(sys) == 2:
     if sys[1].isdigit() is True:
-        print(sys[1])
+
+        try:
+
+        except requests.RequestException:
+            
 
     else:
         sys.exit("Command-line argument is not a number")
