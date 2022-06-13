@@ -3,10 +3,12 @@ from pyfiglet import Figlet
 f = input()
 s = "String"
 
-figlet = Figlet()
+try:
+    if
+    figlet = Figlet()
 
-figlet.getFonts()
+    figlet.getFonts()
 
-figlet.setFont(font=f)
+    figlet.setFont(font=f)
 
-print(figlet.renderText(s))
+    print(figlet.renderText(s))
