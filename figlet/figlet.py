@@ -12,6 +12,8 @@ try:
 
     elif f == "":
         string = input()
+        figlet.setFont(random.)
+        print(figlet.renderText(s))
 
 
 
