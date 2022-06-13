@@ -9,13 +9,14 @@ try:
         split = f.split(" ")
         if split[0] == "-f" or split[0] == "--font":
             font1 = split[1]
-            figlet.setFont(font1)
+            figlet = Figlet()
+            figlet.setFont(font=font1)
             string = input()
             print(figlet.renderText(string))
 
 except EOFError as e:
     print(e)
-    
+
     # elif f == "":
     #     string = input()
     #     figlet.setFont(random.)
