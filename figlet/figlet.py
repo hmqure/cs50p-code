@@ -18,7 +18,10 @@ try:
             figlet.setFont(font=font1)
             print(figlet.renderText(string))
 
-            
+    elif f == "":
+        string = input()
+        figlet.setFont(random.)
+        print(figlet.renderText(string))
 
 except EOFError as e:
     print(e)
