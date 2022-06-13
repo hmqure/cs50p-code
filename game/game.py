@@ -16,18 +16,20 @@ while counter == 0:
                 guess = input("Guess:")
                 num = random.randint(1,int(level))
 
-                if int(guess) == num:
-                    print('Just right!')
-                    counter = counter + 1
-                    break
+                if guess.isdigit() is True:
 
-                elif int(guess) > num:
-                    print("Too large!")
-                    pass
+                    if int(guess) == num:
+                        print('Just right!')
+                        counter = counter + 1
+                        break
 
-                elif int(guess) < num:
-                    print("Too small!")
-                    pass
+                    elif int(guess) > num:
+                        print("Too large!")
+                        pass
+
+                    elif int(guess) < num:
+                        print("Too small!")
+                        pass
 
                 else:
                     pass
