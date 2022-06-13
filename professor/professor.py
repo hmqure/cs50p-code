@@ -29,7 +29,7 @@ def main():
                     break
 
         elif counter == 10:
-            print("Score:",start-incorrect)
+            print(start-incorrect)
             break
 
 
