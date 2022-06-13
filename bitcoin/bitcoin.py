@@ -9,7 +9,7 @@ x = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 if len(sys) == 2:
     if sys[1].isdigit() is True:
         try:
-            y = json.dumps(x)
+            y = x.json()
             print(y)
         except requests.RequestException:
             sys.exit("Psych")
