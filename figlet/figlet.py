@@ -2,16 +2,22 @@ from pyfiglet import Figlet
 import random
 import sys
 sys = sys.argv
-f = ''
 
-if len(sys) == 3:
-# s = "String"
-
-# figlet = Figlet()
-# force = figlet.getFonts()
+figlet = Figlet()
+force = figlet.getFonts()
 
 
-# try:
+try:
+
+    if len(sys) == 3:
+        arg = sys[1]
+        font1 = sys[2]
+
+    elif len(sys) == 1:
+
+except EOFError as e:
+    print(e)
+
 #     if f != "":
 #         split = f.split(" ")
 #         if split[0] == "-f" or split[0] == "--font":
