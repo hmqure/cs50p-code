@@ -11,7 +11,7 @@ if len(sys) == 2:
         try:
             y = x.json()
             rate = y["bpi"]['USD']['rate']
-            print(rate)
+            print(float(rate))
 
         except requests.RequestException:
             sys.exit("Psych")
