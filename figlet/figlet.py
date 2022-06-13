@@ -2,7 +2,9 @@ from pyfiglet import Figlet
 import random
 import sys
 sys = sys.argv
-print(sys)
+f = ''
+
+if len(sys)
 # s = "String"
 
 # figlet = Figlet()
