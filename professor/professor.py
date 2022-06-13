@@ -10,7 +10,7 @@ def main():
 
     while True:
         expr = generate_integer(lev)
-        if counter < 10:
+        if counter < 9:
             while True:
                 if wrong != 3:
                     ans = input(f"{expr[0]} + {expr[1]} = ")
@@ -28,7 +28,7 @@ def main():
                     incorrect = incorrect + 1
                     break
 
-        elif counter == 10:
+        elif counter == 9:
             print(start-incorrect)
             break
 
