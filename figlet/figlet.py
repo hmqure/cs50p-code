@@ -1,3 +1,5 @@
 from pyfiglet import Figlet
 
-print(figlet.getFonts())
+s = "String"
+
+figlet = figlet.getFonts(s)
