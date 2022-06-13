@@ -5,7 +5,9 @@ f = input()
 s = "String"
 
 try:
-    if f[0:2]
+    split = f.split(" ")
+    if split[0] == "-f" or split[0] == "--font":
+        font = split[1]
     figlet = Figlet()
     figlet.getFonts()
 
