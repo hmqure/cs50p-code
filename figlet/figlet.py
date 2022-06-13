@@ -1,8 +1,8 @@
 from pyfiglet import Figlet
 import random
 import sys
-f = sys.argv
-print(f)
+sys = sys.argv
+print(sys)
 # s = "String"
 
 # figlet = Figlet()
