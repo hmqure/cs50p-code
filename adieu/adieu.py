@@ -1,6 +1,7 @@
 import inflect
 
 names = []
+p = inflect.engine()
 
 while True:
     try:
@@ -8,5 +9,5 @@ while True:
         names.append(name)
 
     except EOFError:
-        print(join(names))
+        print(p.join(names, final_sep=","))
         break
