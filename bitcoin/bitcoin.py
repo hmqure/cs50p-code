@@ -10,7 +10,7 @@ if len(sys) == 2:
     if sys[1].isdigit() is True:
         try:
             y = x.json()
-            print(y["Bitcoin"])
+            print(y["time"])
         except requests.RequestException:
             sys.exit("Psych")
 
