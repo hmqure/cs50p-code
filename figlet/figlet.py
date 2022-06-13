@@ -4,12 +4,14 @@ import sys
 f = input()
 s = "String"
 
+figlet = Figlet()
+figlet.getFonts()
+
 try:
     if f != "":
         split = f.split(" ")
         if split[0] == "-f" or split[0] == "--font":
             font1 = split[1]
-            figlet = Figlet()
             figlet.setFont(font=font1)
             string = input()
             print(figlet.renderText(string))
