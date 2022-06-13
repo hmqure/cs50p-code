@@ -4,7 +4,7 @@ import sys
 sys = sys.argv
 f = ''
 
-if len(sys)
+if len(sys) 
 # s = "String"
 
 # figlet = Figlet()
