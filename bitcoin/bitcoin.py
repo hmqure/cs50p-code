@@ -3,9 +3,13 @@ import requests
 
 sys = sys.argv
 
-if sys[1].isdigit() is True:
-    print(sys[1])
+if len(sys) == 2:
+    if sys[1].isdigit() is True:
+        print(sys[1])
+
+    else:
+        sys.exit("Command-line argument is not a number")
 
 else:
-    sys.exit("Command-line argument is not a number")
+     sys.exit("Missing command-line argument")
 
