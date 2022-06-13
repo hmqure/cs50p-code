@@ -6,24 +6,24 @@ s = "String"
 
 figlet = Figlet()
 force = figlet.getFonts()
-print(force)
 
-# try:
-#     if f != "":
-#         split = f.split(" ")
-#         if split[0] == "-f" or split[0] == "--font":
-#             string = input()
-#             font1 = split[1]
-#             figlet.setFont(font=font1)
-#             print(figlet.renderText(string))
 
-#     elif f == "":
-#         string = input()
-#         figlet.setFont(random.)
-#         print(figlet.renderText(string))
+try:
+    if f != "":
+        split = f.split(" ")
+        if split[0] == "-f" or split[0] == "--font":
+            string = input()
+            font1 = split[1]
+            figlet.setFont(font=font1)
+            print(figlet.renderText(string))
 
-# except EOFError as e:
-#     print(e)
+    elif f == "":
+        string = input()
+        figlet.setFont(random.)
+        print(figlet.renderText(string))
+
+except EOFError as e:
+    print(e)
 
     # elif f == "":
     #     string = input()
