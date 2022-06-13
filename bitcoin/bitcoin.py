@@ -12,7 +12,7 @@ if len(sys) == 2:
             y = x.json()
             rate = y["bpi"]['USD']['rate']
             newrate = rate.replace(',','')
-            total = float((float(newrate))*int(sys[1]))
+            total = float((float(newrate))*float(sys[1]))
             print("$"+"{:,}".format(total))
 
 
