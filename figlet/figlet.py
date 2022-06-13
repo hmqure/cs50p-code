@@ -14,6 +14,7 @@ try:
         font1 = sys[2]
         if font1 in force:
             figlet.setFont(font=font1)
+            string = input()
             print(figlet.renderText(string))
 
     elif len(sys) == 1:
