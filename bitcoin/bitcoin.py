@@ -10,7 +10,9 @@ if len(sys) == 2:
     if sys[1].isdigit() is True:
         try:
             y = x.json()
-            print(y["time"])
+            rate = y["bpi"]['USD']['rate']
+            print(rate)
+
         except requests.RequestException:
             sys.exit("Psych")
 
