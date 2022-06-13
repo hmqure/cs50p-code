@@ -1,7 +1,7 @@
 from pyfiglet import Figlet
 import random
 import sys
-f = len(sys.argv)
+f = sys.argv
 print(f)
 # s = "String"
 
