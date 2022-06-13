@@ -8,7 +8,7 @@ try:
     if f != "":
         split = f.split(" ")
         if split[0] == "-f" or split[0] == "--font":
-            font = split[1]
+            font1 = split[1]
 
     elif f == "":
         string = input()
