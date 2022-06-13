@@ -21,6 +21,9 @@ try:
             else:
                 sys.exit("Invalid usage")
 
+        else:
+            sys.exit("Invalid usage")
+
     elif f == "":
         string = input()
         figlet.setFont(font=random.choice(force))
