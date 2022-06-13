@@ -12,8 +12,10 @@ if len(sys) == 2:
             y = x.json()
             rate = y["bpi"]['USD']['rate']
             newrate = rate.replace(',','')
+            total = float((float(newrate))*int(sys[1]))
+            print("$"+"{:,}".format(total))
 
-            print(float((float(newrate))*int(sys[1])))
+
 
         except requests.RequestException:
             sys.exit("Psych")
