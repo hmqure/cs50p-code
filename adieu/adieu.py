@@ -8,5 +8,5 @@ while True:
         names.append(name)
 
     except EOFError:
-        print(names)
+        print(p.join(names))
         break
