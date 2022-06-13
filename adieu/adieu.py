@@ -2,4 +2,7 @@ import inflect
 
 while True:
     try:
-        name = input(")
+        name = input("Name:")
+
+    except EOFError:
+        
