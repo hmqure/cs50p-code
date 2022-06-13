@@ -18,6 +18,8 @@ try:
             figlet.setFont(font=font1)
             print(figlet.renderText(string))
 
+            
+
 except EOFError as e:
     print(e)
 
