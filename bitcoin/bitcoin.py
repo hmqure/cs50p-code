@@ -3,6 +3,7 @@ import requests
 import json
 
 sys = sys.argv
+floatsys = float(sys[1])
 
 x = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
