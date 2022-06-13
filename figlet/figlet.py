@@ -14,8 +14,12 @@ try:
         if split[0] == "-f" or split[0] == "--font":
             string = input()
             font1 = split[1]
-            figlet.setFont(font=font1)
-            print(figlet.renderText(string))
+            if font1 in force:
+                figlet.setFont(font=font1)
+                print(figlet.renderText(string))
+
+            else:
+                sys.exit("Invalid usage")
 
     elif f == "":
         string = input()
