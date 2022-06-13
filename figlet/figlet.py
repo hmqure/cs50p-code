@@ -12,8 +12,14 @@ try:
     if len(sys) == 3:
         arg = sys[1]
         font1 = sys[2]
+        if font1 in force:
+            figlet.setFont(font=font1)
+            print(figlet.renderText(string))
 
     elif len(sys) == 1:
+        string = input()
+        figlet.setFont(font=random.choice(force))
+        print(figlet.renderText(string))
 
 except EOFError as e:
     print(e)
