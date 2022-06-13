@@ -1,6 +1,6 @@
 from pyfiglet import Figlet
 
-f = "rectangles"
+f = input()
 s = "String"
 
 figlet = Figlet()
