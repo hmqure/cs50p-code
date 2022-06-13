@@ -19,7 +19,7 @@ try:
 
     elif f == "":
         string = input()
-        figlet.setFont(random.)
+        figlet.setFont(font=random.choice(force))
         print(figlet.renderText(string))
 
 except EOFError as e:
