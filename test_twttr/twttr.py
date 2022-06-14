@@ -1,3 +1,5 @@
+import test_twttr
+
 def main():
     enter = input("Input:")
     print(shorten(enter))
