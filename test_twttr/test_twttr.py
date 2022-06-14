@@ -6,8 +6,13 @@ def main():
 
 
 def test_shorten():
-    if shorten("hello") == "hello":
-        print('vowels not replaced')
+
+    try:
+        assert shorten("hello") == "hll"
+
+    except AssertionError:
+        print('error')
+
     # elif shorten("hello") == "hello":
     #     print('vowels not replaced')
     # if shorten("hello") == "hello":
