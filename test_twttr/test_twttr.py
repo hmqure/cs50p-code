@@ -7,9 +7,11 @@ def main():
 
 def test_shorten():
 
-    assert shorten("hello") == 'hll'
-    assert shorten("Hello") == "hll"
+    if shorten("Hello") == "Hll":
+        print("capital error")
 
+    if shorten("hello") == 'hello':
+        print("vowel error")
 
 
     # elif shorten("hello") == "hello":
