@@ -7,9 +7,11 @@ def shorten(word):
     new = ''
     vowels = ['a', 'e', 'i', 'o', 'u']
 
-    for i in range(len(word)):
-        if word[i] not in vowels:
-            new += word[i]
+    lower = word.lower()
+
+    for i in range(len(lower)):
+        if lower[i] not in vowels:
+            new += lower[i]
 
     return new
 
