@@ -1,4 +1,5 @@
 from twttr import shorten
+import sys
 
 def main():
     test_shorten()
@@ -8,10 +9,10 @@ def main():
 def test_shorten():
 
     if shorten("Hello") == "Hll":
-        print("capital error")
+        sys.exit
 
     if shorten("hello") == 'hello':
-        print("vowel error")
+        sys.exit
 
 
     # elif shorten("hello") == "hello":
