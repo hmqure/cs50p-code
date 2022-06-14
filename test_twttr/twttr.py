@@ -1,8 +1,9 @@
 def main():
-
+    enter = input("Input:")
+    print(shorten(enter))
 
 def shorten(word):
-    
+
     new = ''
     vowels = ['a', 'e', 'i', 'o', 'u']
 
