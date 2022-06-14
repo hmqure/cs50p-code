@@ -8,10 +8,10 @@ def main():
 def test_shorten():
     if shorten("hello") == "hello":
         print('vowels not replaced')
-    elif shorten("hello") == "hello":
-        print('vowels not replaced')
-    if shorten("hello") == "hello":
-        print('vowels not replaced')
+    # elif shorten("hello") == "hello":
+    #     print('vowels not replaced')
+    # if shorten("hello") == "hello":
+    #     print('vowels not replaced')
 
 
 
