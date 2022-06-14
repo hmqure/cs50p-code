@@ -7,6 +7,7 @@ def main():
 
 def test_shorten():
 
+    assert shorten("hello") == "hll"
     assert shorten("Hello") == "hll"
 
     # elif shorten("hello") == "hello":
