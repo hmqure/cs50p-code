@@ -2,6 +2,7 @@ def main():
 
 
 def shorten(word):
+    
     new = ''
     vowels = ['a', 'e', 'i', 'o', 'u']
 
