@@ -6,7 +6,7 @@ def main():
 
 
 def test_shorten():
-    if shorten("hello") != "hll:
+    if shorten("hello") != "hll":
         print('Error')
 
 
