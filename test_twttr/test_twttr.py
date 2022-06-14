@@ -1,4 +1,8 @@
 from twttr import shorten
 
-# enter = input("Input:")
-# print(shorten(enter))
+def main():
+    enter = input("Input:")
+    print(shorten(enter))
+
+if __name__ == "__main__":
+    main()
