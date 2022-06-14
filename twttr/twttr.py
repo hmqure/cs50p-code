@@ -1,10 +1,18 @@
-enter = input("Input:")
+def main():
+    enter = input("Input:")
+    print(shorten(enter))
 
-new = ''
-vowels = ["A", 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
 
-for i in range(len(enter)):
-    if enter[i] not in vowels:
-        new += enter[i]
+def shorten(word):
+    new = ''
+    vowels = ["A", 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
 
-print(new)
+    for i in range(len(word)):
+        if word[i] not in vowels:
+            new += word[i]
+
+    return new
+
+
+if __name__ == "__main__":
+    main()
