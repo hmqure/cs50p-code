@@ -5,13 +5,9 @@ def main():
 
 
 
-def test_shorten():
+def capital_shorten():
+    assert shorten('Hello') != 'hll'
 
-    if shorten("Hello") == "Hll":
-        print("capital error")
-
-    if shorten("hello") == 'hello':
-        print("vowel error")
 
 
     # elif shorten("hello") == "hello":
