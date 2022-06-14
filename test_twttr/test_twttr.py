@@ -1,4 +1,4 @@
-from twttr import shorten
+from twttr/twttr.py import shorten
 
 # enter = input("Input:")
 # print(shorten(enter))
