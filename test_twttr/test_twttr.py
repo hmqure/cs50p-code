@@ -6,7 +6,7 @@ def main():
 
 
 def test_shorten():
-    if shorten('Hello') == 'Hll':
+    if shorten('Hello') != 'Hll':
         print('capital')
 
     # elif shorten("hello") == "hello":
