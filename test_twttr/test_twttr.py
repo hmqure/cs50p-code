@@ -1,3 +1,5 @@
+from twttr import shorten
+
 def main():
     enter = input("Input:")
     print(shorten(enter))
