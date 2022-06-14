@@ -1,4 +1,4 @@
 from twttr import shorten
 
-enter = input("Input:")
-print(shorten(enter))
+# enter = input("Input:")
+# print(shorten(enter))
