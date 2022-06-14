@@ -1,5 +1,4 @@
 from twttr import shorten
-import sys
 
 def main():
     test_shorten()
@@ -8,11 +7,9 @@ def main():
 
 def test_shorten():
 
-    if shorten("Hello") == "Hll":
-        sys.exit
+    assert shorten("hello") == 'hll'
+    assert shorten("Hello") == "hll"
 
-    if shorten("hello") == 'hello':
-        sys.exit
 
 
     # elif shorten("hello") == "hello":
