@@ -8,7 +8,6 @@ def main():
 def test_shorten():
 
     assert shorten("Hello") == "hll"
-    assert shorten()
 
     # elif shorten("hello") == "hello":
     #     print('vowels not replaced')
