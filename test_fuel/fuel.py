@@ -37,7 +37,7 @@ def gauge(n):
             return "F"
     except:
         if n > 100:
-            return ValueError()
+            return 'L'
 
 
 if __name__ == "__main__":
