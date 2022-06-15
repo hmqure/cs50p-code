@@ -4,10 +4,10 @@ def main():
     test_length()
 
 def test_length():
-    assert is_valid("G") == False
-    assert is_valid("AAAAAAAAAA") == False
-    assert is_valid("HELLO") == False
-    assert is_valid("CS50") == False
+    assert is_valid("G") == "Invalid"
+    assert is_valid("AAAAAAAAAA") == "Invalid"
+    assert is_valid("HELLO") == "Valid"
+    assert is_valid("CS50") == "Valid"
 
 if __name__ == "__main__":
     main()
