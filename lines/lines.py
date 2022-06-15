@@ -1,5 +1,5 @@
 import sys
 
-sys = sys.argv()
+sys = sys.argv
 
 print(sys)
