@@ -1,11 +1,11 @@
-from bank import value
+from plates import is_valid
 
 def main():
     test_hello()
     test_h()
     test_non()
 
-def test_hello():
+def test_length():
     assert value("") == 0
     assert value("hello") == 0
 
