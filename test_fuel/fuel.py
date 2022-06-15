@@ -1,5 +1,3 @@
-import sys
-
 def main():
     frac = input("Fraction:")
     conv = convert(frac)
@@ -15,11 +13,11 @@ def convert(fraction):
             n = n + (round(((int(split[0]))/(int(split[1])))*100))
             return n
 
-        except ZeroDivisionError as e:
-            sys.exit()
+        except ZeroDivisionError:
+            raise
 
-        except ValueError as e:
-            sys.exit()
+        except ValueError:
+            raise
 
 
 
