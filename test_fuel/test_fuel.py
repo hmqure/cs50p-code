@@ -4,13 +4,18 @@ import sys
 def main():
     test_convert()
     test_gauge()
+    test_value()
 
 
 def test_convert():
 
     assert convert('2/3') == 67
     assert convert('4/5') == 80
-    assert convert(2/0) is ValueError
+
+def test_value():
+
+    with pytest.raises(ZeroDivisionError):
+        convert('2/0')
    # assert convert('2/0') is SystemExit
 
 
