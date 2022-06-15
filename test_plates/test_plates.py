@@ -11,6 +11,7 @@ def test_len():
     assert is_valid("AAAAAAAAAA") is not True
     assert is_valid("HELLO") is True
     assert is_valid("CS50") is True
+    assert is_valid("GG") is True
 
 def test_alph():
     assert is_valid('2AAAA') is not True
