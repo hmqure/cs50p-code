@@ -21,7 +21,7 @@ def test_zero():
 
 def test_value():
     with pytest.raises(ValueError):
-        convert('cat/dog')
+        convert('h/m')
 
 
 def test_gauge():
