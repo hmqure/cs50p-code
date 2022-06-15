@@ -15,8 +15,8 @@ def convert(fraction):
             n = n + (round(((int(split[0]))/(int(split[1])))*100))
             return n
 
-        except ZeroDivisionError as e:
-            return e
+        except ZeroDivisionError:
+            raise ZeroDivisionError("Zero Error")
 
         except ValueError as e:
             return e
