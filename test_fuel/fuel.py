@@ -15,30 +15,29 @@ def convert(fraction):
             n = n + (round(((int(split[0]))/(int(split[1])))*100))
             return n
 
-        except ZeroDivisionError:
-            raise ZeroDivisionError("Zero Error")
+        except ZeroDivisionError as e:
+            sys.exit()
 
         except ValueError as e:
-            return e
+            sys.exit()
 
 
 
 def gauge(n):
 
-    try:
-        if 1 < n < 99:
-            return f"{str(n)}%"
+    if 1 < n < 99:
+        return f"{str(n)}%"
 
-        elif n == 0 or n == 1:
-            return "E"
+    elif n == 0 or n == 1:
+        return "E"
 
 
-        elif n == 99 or n == 100:
-            return "F"
+    elif n == 99 or n == 100:
+        return "F"
 
-    except ValueError:
-        if n > 100:
-            raise ValueError("ValueError")
+    elif n > 100:
+        sys.exit()
+
 
 
 if __name__ == "__main__":
