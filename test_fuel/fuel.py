@@ -19,11 +19,11 @@ def convert(fraction):
             sys.exit()
 
         except ValueError as e:
-            pass
+            sys.exit()
 
 
 
-def gauge(percentage):
+def gauge(n):
 
     if 1 < n < 99:
         return f"{str(n)}%"
