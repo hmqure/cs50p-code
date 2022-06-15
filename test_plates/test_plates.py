@@ -1,7 +1,7 @@
 from plates import is_valid
 
 def main():
-    is_valid()
+    test_length()
 
 def test_length():
     assert is_valid("G") == "Invalid"
