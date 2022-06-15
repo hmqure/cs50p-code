@@ -12,8 +12,8 @@ def test_convert():
     try:
         assert convert('4/5') == 80
 
-    except ValueError:
-        
+    except ValueError as e:
+        assert convert(e) is ValueError
    # assert convert('2/0') is SystemExit
 
 
