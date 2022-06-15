@@ -1,5 +1,7 @@
 def main():
-    ...
+    frac = input("Fraction:")
+    conv = convert(frac)
+    print(gauge(conv))
 
 
 def convert(fraction):
@@ -19,21 +21,17 @@ def convert(fraction):
 
 def gauge(percentage):
 
-        if 1 < n < 99:
-        print(str(n)+"%")
+    if 1 < n < 99:
+        return f"{str(n)}%"
         break
 
-        elif n == 0 or n == 1:
-            print("E")
-            break
+    elif n == 0 or n == 1:
+        return "E"
+        break
 
-        elif n == 99 or n == 100:
-            print("F")
-            break
-
-        elif n > 100:
-            pass
-
+    elif n == 99 or n == 100:
+        return "F"
+        break
 
 if __name__ == "__main__":
     main()
