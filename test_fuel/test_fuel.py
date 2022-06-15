@@ -1,4 +1,5 @@
 from fuel import convert, gauge
+import sys
 
 def main():
     test_convert()
@@ -7,7 +8,7 @@ def main():
 
 def test_convert():
     assert convert('2/3') == 67
-    assert convert('2/0') is ZeroDivisionError
+    assert convert('2/0') is SystemExit
 
 
 def test_gauge():
