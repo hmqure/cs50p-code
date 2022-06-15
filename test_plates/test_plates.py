@@ -6,7 +6,7 @@ def main():
     test_non()
 
 def test_hello():
-    assert value("Hello") == 0
+    assert value("") == 0
     assert value("hello") == 0
 
 def test_h():
