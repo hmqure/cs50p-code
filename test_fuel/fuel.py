@@ -13,12 +13,8 @@ def convert(fraction):
             n = n + (round(((int(split[0]))/(int(split[1])))*100))
             return n
 
-        except ZeroDivisionError:
+        except (ZeroDivisionError, ValueError):
             raise
-
-        except ValueError:
-            raise
-
 
 
 def gauge(n):
