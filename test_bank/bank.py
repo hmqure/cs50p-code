@@ -1,9 +1,10 @@
 def main():
     str = input("Greeting: ")
+    print(value(str))
 
 
 def value(greeting):
-    low = str.lower()
+    low = greeting.lower()
     low = low.replace(" ", "")
 
     if low[0] == "h":
