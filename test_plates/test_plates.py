@@ -5,6 +5,7 @@ def main():
 
 def test_length():
     assert is_valid("G") is
+
      False
     # assert is_valid("AAAAAAAAAA") == "Invalid"
     # assert is_valid("HELLO") == "Valid"
