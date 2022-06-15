@@ -7,9 +7,10 @@ def convert(fraction):
      try:
         split = frac.split("/")
         n = n + (round(((int(split[0]))/(int(split[1])))))
+        return n
 
     except ZeroDivisionError as e:
-    pass
+        pass
 
     except ValueError as e:
         pass
