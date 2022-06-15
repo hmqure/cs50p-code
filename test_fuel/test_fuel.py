@@ -7,13 +7,12 @@ def main():
 
 
 def test_convert():
-    assert convert('2/3') == 67
-
     try:
+        assert convert('2/3') == 67
         assert convert('4/5') == 80
 
     except ValueError as e:
-        assert convert(e) is ValueError
+        assert convert(2/0) is ValueError
    # assert convert('2/0') is SystemExit
 
 
