@@ -19,7 +19,7 @@ def convert(fraction):
             sys.exit()
 
         except ValueError as e:
-            sys.exit()
+            pass
 
 
 
