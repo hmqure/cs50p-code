@@ -14,6 +14,7 @@ def test_len():
 
 def test_alph():
     assert is_valid('2AAAA') is not True
+    assert is_valid('222AAA') is not True
     assert is_valid('AAA22A') is not True
     assert is_valid('AAA222') is True
 
