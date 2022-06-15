@@ -7,7 +7,7 @@ def main():
 
 
 def test_convert():
-    assert convert('2/3') ==
+    assert convert('2/3') == sys.exit()
 
 
 def test_gauge():
