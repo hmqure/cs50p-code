@@ -9,5 +9,8 @@ def test_len():
     assert is_valid("HELLO") is True
     assert is_valid("CS50") is True
 
+def test_alph():
+    
+
 if __name__ == "__main__":
     main()
