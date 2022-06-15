@@ -35,8 +35,9 @@ def gauge(n):
 
         elif n == 99 or n == 100:
             return "F"
-    except n > 100 raise ValueError as e:
-            return e
+    except:
+        if n > 100:
+            return ValueError()
 
 
 
