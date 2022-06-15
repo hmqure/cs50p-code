@@ -6,7 +6,7 @@ def convert(fraction):
      n = 0
      try:
         split = frac.split("/")
-        n = n + (round(((int(split[0]))/(int(split[1])))))
+        n = n + (round(((int(split[0]))/(int(split[1])))*100))
         return n
 
     except ZeroDivisionError as e:
@@ -14,6 +14,7 @@ def convert(fraction):
 
     except ValueError as e:
         pass
+
 
 
 def gauge(percentage):
