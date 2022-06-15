@@ -1,6 +1,6 @@
 def main():
     str = input("Greeting: ")
-    print(value(str))
+    print(f"${value(str)}")
 
 
 def value(greeting):
@@ -9,11 +9,11 @@ def value(greeting):
 
     if low[0] == "h":
         if low[0:5] == "hello":
-            return "$0"
+            return 0
         else:
-            return "$20"
+            return 20
     else:
-        return "$100"
+        return 100
 
 
 if __name__ == "__main__":
