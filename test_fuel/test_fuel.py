@@ -7,13 +7,13 @@ def main():
 
 
 def test_convert():
-    assert convert('hello') == 'hll'
-    assert shorten('Hello') == 'Hll'
-    assert shorten('HELLO') == 'HLL'
+    assert convert('2/3') ==
+
 
 def test_gauge():
-    assert shorten('hello') == 'hll'
-    assert shorten('Hello') == 'Hll'
+    assert gauge(100) == 'F'
+    assert gauge(1) == 'E'
+    assert gauge(67) == '67%'
 
 if __name__ == "__main__":
     main()
