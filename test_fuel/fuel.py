@@ -16,27 +16,27 @@ def convert(fraction):
             return n
 
         except ZeroDivisionError as e:
-            sys.exit()
+            return e
 
         except ValueError as e:
-            sys.exit()
+            return e
 
 
 
 def gauge(n):
 
-    if 1 < n < 99:
-        return f"{str(n)}%"
+    try:
+        if 1 < n < 99:
+            return f"{str(n)}%"
 
-    elif n == 0 or n == 1:
-        return "E"
+        elif n == 0 or n == 1:
+            return "E"
 
 
-    elif n == 99 or n == 100:
-        return "F"
-
-    elif n > 100:
-        sys.exit()
+        elif n == 99 or n == 100:
+            return "F"
+    except n > 100 raise ValueError as e:
+            return e
 
 
 
