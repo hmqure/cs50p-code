@@ -2,13 +2,11 @@
 enter = input("Input:")
 
 new = ''
-vowels = ['a', 'e', 'i', 'o', 'u']
+vowels = ['a', 'e', 'i', 'o', 'u', 'A','E','I','O','U']
 
-lower = word.lower()
-
-for i in range(len(lower)):
-    if lower[i] not in vowels:
-        new += lower[i]
+for i in range(len(enter)):
+    if enter[i] not in vowels:
+        new += enter[i]
 
 print(new)
 
