@@ -8,6 +8,11 @@ def convert(fraction):
         split = frac.split("/")
         n = n + (round(((int(split[0]))/(int(split[1])))))
 
+    except ZeroDivisionError as e:
+    pass
+
+    except ValueError as e:
+        pass
 
 
 def gauge(percentage):
