@@ -13,7 +13,6 @@ def test_convert():
     assert convert('4/5') == 80
 
 def test_value():
-
     with pytest.raises(ZeroDivisionError):
         convert('2/0')
    # assert convert('2/0') is SystemExit
