@@ -6,13 +6,12 @@ def main():
 
 
 def test_shorten():
-    if shorten('Hello') != 'Hll':
-        print('capital')
-
-    # elif shorten("hello") == "hello":
-    #     print('vowels not replaced')
-    # if shorten("hello") == "hello":
-    #     print('vowels not replaced')
+    assert shorten('hello') == 'hll'
+    assert shorten('Hello') == 'Hll'
+    assert shorten('HELLO') == 'HLL'
+    assert shorten('123') == '123'
+    assert shorten('hello123') == 'hll123'
+    assert shorten('hello, world') == 'hll, wrld'
 
 if __name__ == "__main__":
     main()
