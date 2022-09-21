@@ -2,6 +2,8 @@ import sys
 
 sys = sys.argv
 
+line_list = []
+
 if len(sys) > 2:
     print("Too many command-line arguments")
 
@@ -15,3 +17,5 @@ elif len(sys) == 2:
     else:
         with open(sys[1], "r") as file:
             line = file.readlines()
+            line_list.append(line)
+            print(len(line_list))
