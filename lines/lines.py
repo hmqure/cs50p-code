@@ -19,3 +19,5 @@ elif len(syst) == 2:
             line = file.readlines()
             line_list.append(line)
             print(len(line_list[0]))
+# not found
+# exclude white spaces and comments
