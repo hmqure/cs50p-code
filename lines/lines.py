@@ -18,4 +18,4 @@ elif len(sys) == 2:
         with open(sys[1], "r") as file:
             line = file.readlines()
             line_list.append(line)
-            print(len(line_list))
+            print(len(line_list[0]))
