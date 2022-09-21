@@ -13,4 +13,5 @@ elif len(sys) == 2:
         print("Not a python file")
 
     else:
+        file = open(sys[1], "r")
         
