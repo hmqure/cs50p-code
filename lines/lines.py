@@ -17,13 +17,18 @@ elif len(syst) == 2:
     else:
         with open(syst[1], "r") as file:
             line = file.readlines()
-            for i in line:
-                print(i)
-                
-                #if i[0] != "#" or i[0] != '\n':
-                    #line_list.append(line)
-                    #print(line_list)
-                    #print(len(line_list[0]))
+            line_list.append(line)
+            print(line_list)
+
+            if 
+
+            print(line_list[0])
+
+
+
+
+
+            #print(len(line_list[0]))
 
 # not found
 # exclude white spaces and comments
