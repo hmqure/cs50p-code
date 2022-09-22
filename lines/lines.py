@@ -3,6 +3,7 @@ import sys
 syst = sys.argv
 
 line_list = []
+fin_list = []
 
 if len(syst) > 2:
     sys.exit("Too many command-line arguments")
@@ -18,11 +19,14 @@ elif len(syst) == 2:
         with open(syst[1], "r") as file:
             line = file.readlines()
             line_list.append(line)
-            print(line_list)
 
-            if 
+            for i in line_list[0]:
+                if i[0] != '#':
+                    fin_list.append(i)
 
-            print(line_list[0])
+
+for i in fin_list:
+    print(i)
 
 
 
