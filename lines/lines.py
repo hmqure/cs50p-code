@@ -17,7 +17,9 @@ elif len(syst) == 2:
     else:
         with open(syst[1], "r") as file:
             line = file.readlines()
-            line_list.append(line)
-            print(len(line_list[0]))
+            if line[0] != "#":
+                line_list.append(line)
+                print(len(line_list[0]))
+
 # not found
 # exclude white spaces and comments
