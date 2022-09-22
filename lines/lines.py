@@ -11,6 +11,9 @@ if len(syst) > 2:
 elif len(syst) == 1:
     sys.exit("Too few command-line arguments")
 
+elif FileNotFoundError:
+    sys.exit("File does not exist")
+    
 elif len(syst) == 2:
     if (syst[1][-3::]) != ".py":
         sys.exit("Not a python file")
