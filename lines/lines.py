@@ -16,6 +16,8 @@ elif len(syst) == 2:
         sys.exit("Not a python file")
 
     else:
+        try:
+            
         with open(syst[1], "r") as file:
             line = file.readlines()
             line_list.append(line)
