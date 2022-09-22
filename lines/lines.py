@@ -17,7 +17,7 @@ elif len(syst) == 2:
 
     else:
         try:
-            
+            syst[1] 
         with open(syst[1], "r") as file:
             line = file.readlines()
             line_list.append(line)
