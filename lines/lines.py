@@ -33,10 +33,3 @@ elif len(syst) == 2:
 
 
 print(len(fin_list))
-
-
-
-            #print(len(line_list[0]))
-
-# not found
-# exclude white spaces and comments
