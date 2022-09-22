@@ -17,15 +17,17 @@ elif len(syst) == 2:
 
     else:
         try:
-            exists(syst[1]) == TRUE
-        with open(syst[1], "r") as file:
-            line = file.readlines()
-            line_list.append(line)
+            with open(syst[1], "r") as file:
+                line = file.readlines()
+                line_list.append(line)
 
-            for i in line_list[0]:
-                if i[0] != '#':
-                    if i[0] != '\n':
-                        fin_list.append(i)
+                for i in line_list[0]:
+                    if i[0] != '#':
+                        if i[0] != '\n':
+                            fin_list.append(i)
+
+        except FileNotFoundError:
+            sys.exit("File does not exist")
 
 
 
