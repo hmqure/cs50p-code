@@ -7,6 +7,6 @@ stripped = []
 
 for items in menu:
     strip = (items.strip('\n'))
-    stripped.append(strip.split('\t'))
+    stripped.append(strip)#.split('\t'))
 
 print(stripped)
