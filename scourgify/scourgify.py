@@ -47,14 +47,16 @@ elif len(syst) == 3:
                 with open(syst[2], 'w') as after:
                     writer = csv.writer(after)
 
-                header = ['first','last','house']
+                    header = ['first','last','house']
 
-                writer.writerow(header)
+                    writer.writerow(header)
 
-                for i in range(len(first)):
-                    writer.writerow(first[i], last[i], house[i])
+                    
 
-                after.close()
+                    for i in range(len(first)):
+                        writer.writerow(first[i], last[i], house[i])
+
+                    after.close()
 
         except FileNotFoundError:
             sys.exit("File does not exist")
