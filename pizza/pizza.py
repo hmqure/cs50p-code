@@ -16,8 +16,9 @@ splitted = []
 for i in stripped:
     splitted.append(i.split(','))
 
-print(splitted)
+headers = splitted[0]
+print(headers)
 
-print(tabulate.grid('sicilian.csv'))
+# print(tabulate.grid('sicilian.csv'))
 
-print(tabulate(mydata, headers=head, tablefmt="grid"))
+# print(tabulate(mydata, headers=head, tablefmt="grid"))
