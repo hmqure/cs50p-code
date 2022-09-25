@@ -1,6 +1,8 @@
 import tabulate
 import sys
 
+syst = sys.argv
+
 if len(syst) > 2:
     sys.exit("Too many command-line arguments")
 
@@ -28,7 +30,9 @@ elif len(syst) == 2:
                     splitted.append(i.split(','))
 
                 headers = splitted[0]
+                splitted.pop()
                 print(headers)
+                print(splitted)
 
 
 
