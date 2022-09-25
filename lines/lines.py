@@ -32,4 +32,4 @@ elif len(syst) == 2:
 
 
 
-print(len(fin_list))
+print(fin_list)
