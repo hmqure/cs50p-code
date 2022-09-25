@@ -22,10 +22,9 @@ elif len(syst) == 2:
                 line_list.append(line)
 
                 for i in line_list[0]:
-                    if i.isspace() is False:
+                    if (str(i)).isspace() is False:
                         if i[0] != '#':
                                 fin_list.append(i)
-                                print(i)
 
         except FileNotFoundError:
             sys.exit("File does not exist")
