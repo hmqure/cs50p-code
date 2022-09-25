@@ -31,3 +31,5 @@ elif len(syst) == 2:
 
 
 print(len(fin_list))
+
+if not i.lstrip().startswith('#') and i.lstrip() != '':
