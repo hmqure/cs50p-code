@@ -12,7 +12,7 @@ elif len(syst) <= 2:
     sys.exit("Too few command-line arguments")
 
 elif len(syst) == 3:
-    if (syst[1][-4::].lower()) not in []:
+    if syst[1].any() not in []:
         sys.exit("Could not read", syst[1])
 
     elif (syst[2][-4::]) != ".csv":
