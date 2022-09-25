@@ -3,7 +3,13 @@ import sys
 import csv
 
 syst = sys.argv
-extensions = ['.jpg','.jpeg','.png']
+extensions = ['jpg','jpeg','png']
+
+sys1ext = []
+sys2ext = []
+
+syst[1].split(".")
+sys1ext = syst[-1]
 
 if len(syst) > 3:
     sys.exit("Too many command-line arguments")
@@ -18,7 +24,7 @@ elif len(syst) == 3:
     elif syst[2].any(extensions) is not True::
         sys.exit("Could not read", syst[2])
 
-    elif 
+    elif
 
     else:
         try:
