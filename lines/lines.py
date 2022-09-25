@@ -22,9 +22,8 @@ elif len(syst) == 2:
                 line_list.append(line)
 
                 for i in line_list[0]:
-                    if (str(i)).isspace() is False:
-                        if i[0] != '#':
-                                fin_list.append(i)
+                    if (str(i)).isspace() is False and i[0] != '#':
+                        fin_list.append(i)
 
         except FileNotFoundError:
             sys.exit("File does not exist")
@@ -32,4 +31,4 @@ elif len(syst) == 2:
 
 print(len(fin_list))
 
-if not i.lstrip().startswith('#') and i.lstrip() != '':
+#if not i.lstrip().startswith('#') and i.lstrip() != '':
