@@ -8,6 +8,6 @@ extensions = ['jpg','jpeg','png']
 sys1ext = []
 sys2ext = []
 
-fr = syst[1].split(".")
+for i in syst:
+    print(i.split("."))
 
-print(fr)
