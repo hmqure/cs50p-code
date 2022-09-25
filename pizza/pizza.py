@@ -16,4 +16,6 @@
 
 # print(splitted)
 
-import tabulate 
+import tabulate
+
+print(tabulate.grid('sicilian.csv'))
