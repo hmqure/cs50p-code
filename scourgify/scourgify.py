@@ -39,11 +39,11 @@ elif len(syst) == 3:
                 house = []
 
                 for i in splitted:
-                    first.append(i[1])
-                    last.append(i[0].replace())
+                    first.append(i[1].replace('"', '').replace(' ',''))
+                    last.append(i[0].replace('"', ''))
                     house.append(i[2])
 
-                print(last)
+                print(house)
 
 
         except FileNotFoundError:
