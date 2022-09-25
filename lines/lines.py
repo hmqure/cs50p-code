@@ -30,9 +30,4 @@ elif len(syst) == 2:
             sys.exit("File does not exist")
 
 
-
-
-for i in fin_list:
-    i.replace('\n','')
-
-print(fin_list)
+print(len(fin_list))
