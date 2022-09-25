@@ -17,7 +17,10 @@ elif len(syst) <= 2:
     sys.exit("Too few command-line arguments")
 
 elif len(syst) == 3:
-    if sysext[0].lower not in extensions or sysext[1].lower not in extensions:
+    if sysext[0].lower not in extensions:
+        sys.exit('Invalid input')
+
+    elif sysext[1].lower not in extensions:
         sys.exit('Invalid input')
 
     elif sysext[0] != sysext[1]:
@@ -25,47 +28,48 @@ elif len(syst) == 3:
 
     else:
         try:
-            with open(syst[1], "r") as file:
-                menu = file.readlines()
+            print('nice')
+            # with open(syst[1], "r") as file:
+            #     menu = file.readlines()
 
-                stripped = []
+            #     stripped = []
 
-                for items in menu:
-                    strip = (items.strip('\n'))
-                    stripped.append(strip)#.split('\t'))
+            #     for items in menu:
+            #         strip = (items.strip('\n'))
+            #         stripped.append(strip)#.split('\t'))
 
-                splitted = []
+            #     splitted = []
 
-                for i in stripped:
-                    splitted.append(i.split(','))
+            #     for i in stripped:
+            #         splitted.append(i.split(','))
 
-                splitted.pop(0)
+            #     splitted.pop(0)
 
-                first = []
-                last = []
-                house = []
+            #     first = []
+            #     last = []
+            #     house = []
 
-                for i in splitted:
-                    first.append(i[1].replace('"', '').replace(' ',''))
-                    last.append(i[0].replace('"', ''))
-                    house.append(i[2])
+            #     for i in splitted:
+            #         first.append(i[1].replace('"', '').replace(' ',''))
+            #         last.append(i[0].replace('"', ''))
+            #         house.append(i[2])
 
-                with open(syst[2], 'w') as after:
-                    writer = csv.writer(after)
+            #     with open(syst[2], 'w') as after:
+            #         writer = csv.writer(after)
 
-                    header = ['first','last','house']
+            #         header = ['first','last','house']
 
-                    writer.writerow(header)
+            #         writer.writerow(header)
 
-                    data = []
+            #         data = []
 
-                    for i in range(len(first)):
-                        data.append([first[i], last[i], house[i]])
+            #         for i in range(len(first)):
+            #             data.append([first[i], last[i], house[i]])
 
-                    for i in data:
-                        writer.writerow(i)
+            #         for i in data:
+            #             writer.writerow(i)
 
-                    after.close()
+            #         after.close()
 
         except FileNotFoundError:
             sys.exit("File does not exist")
