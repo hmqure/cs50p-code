@@ -12,7 +12,7 @@ elif len(syst) <= 2:
 elif len(syst) == 3:
     if (syst[1][-4::]) != ".csv":
         sys.exit("Could not read", syst[1])
-        
+
     elif (syst[2][-4::]) != ".csv":
         sys.exit("Could not read", syst[2])
 
@@ -32,12 +32,7 @@ elif len(syst) == 3:
                 for i in stripped:
                     splitted.append(i.split(','))
 
-                head = splitted[0]
-                splitted.pop(0)
-                # print(headers)
-                # print(splitted)
-                print(tabulate(splitted, headers=head, tablefmt="grid"))
-
+                print()
 
 
         except FileNotFoundError:
