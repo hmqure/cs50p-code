@@ -1,5 +1,6 @@
 from tabulate import tabulate
 import sys
+import csv
 
 syst = sys.argv
 
@@ -43,7 +44,9 @@ elif len(syst) == 3:
                     last.append(i[0].replace('"', ''))
                     house.append(i[2])
 
-                print(house)
+                with open(syst[2], 'w') as after:
+
+                    
 
 
         except FileNotFoundError:
