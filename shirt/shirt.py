@@ -5,11 +5,10 @@ import csv
 syst = sys.argv
 extensions = ['jpg','jpeg','png']
 
-sys1ext = []
-sys2ext = []
+sysext = []
 
-syst[1].split(".")
-sys1ext = syst[-1]
+for i in syst:
+    sysext.append(i.split(".")[1])
 
 if len(syst) > 3:
     sys.exit("Too many command-line arguments")

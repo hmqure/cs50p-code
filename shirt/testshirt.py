@@ -5,9 +5,10 @@ import csv
 syst = ['1.png', 'dsdg.jpg']
 extensions = ['jpg','jpeg','png']
 
-sys1ext = []
-sys2ext = []
+sysext = []
+
 
 for i in syst:
-    print(i.split("."))
+    sys1ext.append(i.split(".")[1])
 
+print(sysext)
