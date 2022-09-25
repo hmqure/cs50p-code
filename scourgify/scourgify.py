@@ -11,7 +11,10 @@ elif len(syst) <= 2:
 
 elif len(syst) == 3:
     if (syst[1][-4::]) != ".csv":
-        sys.exit("Not a CSV file")
+        sys.exit("Could not read", syst[1])
+        
+    elif (syst[2][-4::]) != ".csv":
+        sys.exit("Could not read", syst[2])
 
     else:
         try:
