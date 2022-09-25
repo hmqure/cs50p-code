@@ -1,17 +1,19 @@
-file = 'sicilian.csv'
+# file = 'sicilian.csv'
 
-with open(file, 'r') as file:        #open tab file
-    menu = file.readlines()
+# with open(file, 'r') as file:        #open tab file
+#     menu = file.readlines()
 
-stripped = []
+# stripped = []
 
-for items in menu:
-    strip = (items.strip('\n'))
-    stripped.append(strip)#.split('\t'))
+# for items in menu:
+#     strip = (items.strip('\n'))
+#     stripped.append(strip)#.split('\t'))
 
-splitted = []
+# splitted = []
 
-for i in stripped:
-    splitted.append(i.split(','))
+# for i in stripped:
+#     splitted.append(i.split(','))
 
-print(splitted)
+# print(splitted)
+
+import tabulate 
