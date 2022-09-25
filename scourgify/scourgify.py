@@ -32,7 +32,11 @@ elif len(syst) == 3:
                 for i in stripped:
                     splitted.append(i.split(','))
 
-                print(splitted)
+                splitted.pop(0)
+
+                for i in splitted:
+                    for j in i:
+                        print(j)
 
 
         except FileNotFoundError:
