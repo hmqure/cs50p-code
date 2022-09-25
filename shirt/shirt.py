@@ -17,13 +17,8 @@ elif len(syst) <= 2:
     sys.exit("Too few command-line arguments")
 
 elif len(syst) == 3:
-    if sysext[0] not in extensions:
+    if sysext[0].lower not in extensions or sysext[1].lower not in extensions:
         sys.exit('invalid input')
-
-    elif syst[2].any(extensions) is not True::
-        sys.exit("Could not read", syst[2])
-
-    elif
 
     else:
         try:

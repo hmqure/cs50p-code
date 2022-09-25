@@ -13,3 +13,5 @@ for i in syst:
 
 if sysext[0] not in extensions:
     print("no")
+
+print(sysext)
