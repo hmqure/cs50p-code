@@ -51,10 +51,13 @@ elif len(syst) == 3:
 
                     writer.writerow(header)
 
-                    
+                    data = []
 
                     for i in range(len(first)):
-                        writer.writerow(first[i], last[i], house[i])
+                        data.append([first[i], last[i], house[i]])
+
+                    for i in data:
+                        writer.writerow(i)
 
                     after.close()
 
