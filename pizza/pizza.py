@@ -29,10 +29,11 @@ elif len(syst) == 2:
                 for i in stripped:
                     splitted.append(i.split(','))
 
-                headers = splitted[0]
-                splitted.pop()
-                print(headers)
-                print(splitted)
+                head = splitted[0]
+                splitted.pop(0)
+                # print(headers)
+                # print(splitted)
+                print(tabulate(splitted, headers=head, tablefmt="grid"))
 
 
 
@@ -40,13 +41,4 @@ elif len(syst) == 2:
             sys.exit("File does not exist")
 
 
-# file = 'sicilian.csv'
-
-# with open(file, 'r') as file:        #open tab file
-
-
-
-
-# print(tabulate.grid('sicilian.csv'))
-
-# print(tabulate(mydata, headers=head, tablefmt="grid"))
+print(tabulate(splitted, headers=head, tablefmt="grid"))
