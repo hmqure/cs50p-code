@@ -32,4 +32,7 @@ elif len(syst) == 2:
 
 
 
+for i in fin_list:
+    i.replace('\n','')
+
 print(fin_list)
