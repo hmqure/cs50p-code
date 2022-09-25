@@ -22,7 +22,7 @@ elif len(syst) == 2:
                 line_list.append(line)
 
                 for i in line_list[0]:
-                    if i[0] != ' ':
+                    if i.isspace() is False:
                         if i[0] != '#':
                             if i[0] != '\n':
                                 fin_list.append(i)
