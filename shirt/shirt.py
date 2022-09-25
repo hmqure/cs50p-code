@@ -12,11 +12,13 @@ elif len(syst) <= 2:
     sys.exit("Too few command-line arguments")
 
 elif len(syst) == 3:
-    if syst[1].any() not in []:
+    if syst[1].any(extensions) is not True:
         sys.exit("Could not read", syst[1])
 
-    elif (syst[2][-4::]) != ".csv":
+    elif syst[2].any(extensions) is not True::
         sys.exit("Could not read", syst[2])
+
+    elif 
 
     else:
         try:
