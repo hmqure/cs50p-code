@@ -25,6 +25,7 @@ elif len(syst) == 2:
                     if i.isspace() is False:
                         if i[0] != '#':
                                 fin_list.append(i)
+                                print(i)
 
         except FileNotFoundError:
             sys.exit("File does not exist")
@@ -32,4 +33,4 @@ elif len(syst) == 2:
 
 
 
-print(len(fin_list))
+#print(len(fin_list))
