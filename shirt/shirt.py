@@ -3,6 +3,7 @@ import sys
 import csv
 
 syst = sys.argv
+extensions = ['.jpg','.jpeg','.png']
 
 if len(syst) > 3:
     sys.exit("Too many command-line arguments")
