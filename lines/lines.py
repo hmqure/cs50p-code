@@ -24,7 +24,8 @@ elif len(syst) == 2:
                 for i in line_list[0]:
                     if i[0] != '#':
                         if i[0] != '\n':
-                            fin_list.append(i)
+                            if i[0] != ' ':
+                                fin_list.append(i)
 
         except FileNotFoundError:
             sys.exit("File does not exist")
