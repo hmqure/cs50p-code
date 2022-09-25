@@ -54,7 +54,7 @@ elif len(syst) == 3:
                 for i in range(len(first)):
                     writer.writerow(first[i], last[i], house[i])
 
-                after.close
+                after.close()
 
         except FileNotFoundError:
             sys.exit("File does not exist")
