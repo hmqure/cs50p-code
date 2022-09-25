@@ -8,41 +8,40 @@ elif len(syst) == 1:
     sys.exit("Too few command-line arguments")
 
 elif len(syst) == 2:
-    if (syst[1][-3::]) != ".py":
-        sys.exit("Not a python file")
+    if (syst[1][-4::]) != ".csv":
+        sys.exit("Not a CSV file")
 
     else:
         try:
             with open(syst[1], "r") as file:
-                line = file.readlines()
-                line_list.append(line)
+                menu = file.readlines()
 
-                for i in line_list[0]:
-                    if not i.lstrip().startswith('#') and i.lstrip() != '':
-                        fin_list.append(i)
+                stripped = []
+
+                for items in menu:
+                    strip = (items.strip('\n'))
+                    stripped.append(strip)#.split('\t'))
+
+                splitted = []
+
+                for i in stripped:
+                    splitted.append(i.split(','))
+
+                headers = splitted[0]
+                print(headers)
+
+
 
         except FileNotFoundError:
             sys.exit("File does not exist")
 
 
-file = 'sicilian.csv'
+# file = 'sicilian.csv'
 
-with open(file, 'r') as file:        #open tab file
-    menu = file.readlines()
+# with open(file, 'r') as file:        #open tab file
 
-stripped = []
 
-for items in menu:
-    strip = (items.strip('\n'))
-    stripped.append(strip)#.split('\t'))
 
-splitted = []
-
-for i in stripped:
-    splitted.append(i.split(','))
-
-headers = splitted[0]
-print(headers)
 
 # print(tabulate.grid('sicilian.csv'))
 
