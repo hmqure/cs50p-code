@@ -40,7 +40,7 @@ elif len(syst) == 3:
 
                 for i in splitted:
                     first.append(i[1])
-                    last.append(i[0].)
+                    last.append(i[0].replace())
                     house.append(i[2])
 
                 print(last)
