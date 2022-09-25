@@ -17,18 +17,20 @@ elif len(syst) <= 2:
     sys.exit("Too few command-line arguments")
 
 elif len(syst) == 3:
-    if sysext[0].lower not in extensions:
+    if sysext[1].lower() not in extensions:
         sys.exit('Invalid input')
 
-    elif sysext[1].lower not in extensions:
+    elif sysext[2].lower() not in extensions:
         sys.exit('Invalid input')
 
-    elif sysext[0] != sysext[1]:
+    elif sysext[1].lower() != sysext[2].lower():
         sys.exit('Input and output have different extensions')
 
     else:
         try:
             print('nice')
+
+
             # with open(syst[1], "r") as file:
             #     menu = file.readlines()
 

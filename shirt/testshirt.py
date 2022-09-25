@@ -2,7 +2,7 @@ from tabulate import tabulate
 import sys
 import csv
 
-syst = ['1.pn', 'dsdg.pol']
+syst = ['lines.py','1.jpg', 'dsdg.jpg']
 extensions = ['jpg','jpeg','png']
 
 sysext = []
@@ -11,7 +11,9 @@ sysext = []
 for i in syst:
     sysext.append(i.split(".")[1])
 
-if sysext[0] not in extensions:
+if sysext[1] not in extensions:
     print("no")
+else:
+    print('yes')
 
 print(sysext)
