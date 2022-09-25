@@ -33,4 +33,4 @@ elif len(syst) == 2:
 
 
 
-#print(len(fin_list))
+print(len(fin_list))
