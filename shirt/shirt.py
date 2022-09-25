@@ -18,7 +18,10 @@ elif len(syst) <= 2:
 
 elif len(syst) == 3:
     if sysext[0].lower not in extensions or sysext[1].lower not in extensions:
-        sys.exit('invalid input')
+        sys.exit('Invalid input')
+
+    elif sysext[0] != sysext[1]:
+        sys.exit('Input and output have different extensions')
 
     else:
         try:
