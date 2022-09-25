@@ -34,9 +34,16 @@ elif len(syst) == 3:
 
                 splitted.pop(0)
 
+                first = []
+                last = []
+                house = []
+
                 for i in splitted:
-                    for j in i:
-                        print(j)
+                    first.append(i[1])
+                    last.append(i[0].)
+                    house.append(i[2])
+
+                print(last)
 
 
         except FileNotFoundError:
