@@ -1,4 +1,4 @@
-import tabulate
+from tabulate import tabulate
 import sys
 
 syst = sys.argv
@@ -39,6 +39,3 @@ elif len(syst) == 2:
 
         except FileNotFoundError:
             sys.exit("File does not exist")
-
-
-print(tabulate(splitted, headers=head, tablefmt="grid"))
