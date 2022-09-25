@@ -9,4 +9,6 @@ for items in menu:
     strip = (items.strip('\n'))
     stripped.append(strip)#.split('\t'))
 
-print(stripped)
+for i in stripped:
+    i.replace(',','|')
+    print(i)
