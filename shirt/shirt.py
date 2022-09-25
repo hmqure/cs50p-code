@@ -1,6 +1,6 @@
-from tabulate import tabulate
+from PIL import Image
 import sys
-import csv
+
 
 syst = sys.argv
 extensions = ['jpg','jpeg','png']
