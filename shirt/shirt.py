@@ -28,10 +28,7 @@ elif len(syst) == 3:
 
     else:
         try:
-            im = syst[1]
-
-            image = Image.open(im)
-            image.show()
+            print(syst[1])
 
 
             # with open(syst[1], "r") as file:
