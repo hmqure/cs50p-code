@@ -28,7 +28,11 @@ elif len(syst) == 3:
 
     else:
         try:
-            print(syst[1])
+
+            with open(syst[1], "r") as file:
+                menu = file.readlines()
+
+            
 
 
             # with open(syst[1], "r") as file:
