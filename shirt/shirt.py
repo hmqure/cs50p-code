@@ -28,7 +28,7 @@ elif len(syst) == 3:
 
     else:
         try:
-            im = Image.open(f"{syst[1]}")
+            im = Image.open(syst[1])
 
             im.show()
 
