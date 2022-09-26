@@ -30,9 +30,13 @@ elif len(syst) == 3:
         try:
 
             with open(syst[1], "r") as file:
-                menu = file.readlines()
+                pic = Image.open(file)
 
-            
+                pic.show()
+
+
+
+
 
 
             # with open(syst[1], "r") as file:
