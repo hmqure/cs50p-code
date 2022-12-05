@@ -29,11 +29,13 @@ elif len(syst) == 3:
     else:
         try:
 
-            file = syst[1]
-            img = Image.open(file)
+            # file = syst[1]
+            # img = Image.open(file)
 
-            img.show()
-            
+            # img.show()
+
+            print('nice')
+
 
 
 
